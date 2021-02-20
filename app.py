@@ -46,11 +46,9 @@ def sentiment_analysis_prediction():
         # #vector = np.array([x_test.flatten()])
 
         # model = load_model('accenture_test_model')
-        print("done")
-        #prediction = int(model.predict(x_test).round().item())
+
         predictions = model.predict(np.array([text]))
-        #probability = model.predict(array([vector][0]))[0][0]
-        #class1= model.predict_classes(array([vector][0]))[0][0]
+
 
         print(predictions[[0]])
         if predictions == 0:
